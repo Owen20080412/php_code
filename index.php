@@ -3,6 +3,21 @@
   <head>
     <meta charset="utf-8">
     <title>會員管理系統</title>
+    <script type="text/javascript">
+     function check_data()
+     {
+       if(document.myForm.acount.value.length==0)
+         {alert("帳號欄位不可空白.");}         
+       else if(document.myForm.password.value.length==0)
+         {alert("密碼欄位不可空白.");}  
+       else
+         {
+           alert("已送出");
+           myForm.submit();
+         }
+     }
+
+    </script>
   </head>
   <body>
     <p align="center"><img src="member.jpg"></p>  
@@ -33,5 +48,9 @@
       </tr>
       </table>
     </form>
+    <p align="center">
+      <a href="join.html">加入會員</a>
+      <a href="search_pwd.html">查詢密碼</a>
+    </p> 
   </body>
 </html>
